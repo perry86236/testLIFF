@@ -26,19 +26,7 @@
                 initializeApp(data);
             });
 
-            //ButtonGetProfile
-            $('#ButtonGetProfile').click(function () {
-                //取得User Proile
-                liff.getProfile().then(
-                    profile=> {
-                        //顯示在text box中
-                        $('#UserInfo').val(profile.displayName);
-                        //居然可以alert
-                        alert('done');
-                    }
-                );
-            });
-
+            
             //ButtonSendMsg
             $('#ButtonSendMsg').click(function () {
                 liff.sendMessages([
