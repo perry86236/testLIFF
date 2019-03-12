@@ -13,10 +13,7 @@
         function initializeApp(data) {
             //取得QueryString
             let urlParams = new URLSearchParams(window.location.search);
-            //顯示QueryString
-            $('#QueryString').val(urlParams.toString());
-            //顯示UserId
-            $('#userid').val(data.context.userId);
+
         }
 
         //ready
